@@ -22,7 +22,7 @@ export function App() {
   const [loading, setLoading] = useState(true);
 
   const loadAllImages = async (): Promise<ImageData[]> => {
-    const modules = import.meta.glob("/src/assets/iw3/**/*.png", {
+    const modules = import.meta.glob("/src/assets/iw3/**/*.jpg", {
       eager: true,
     });
 
